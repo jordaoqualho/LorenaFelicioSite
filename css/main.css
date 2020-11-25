@@ -1,6 +1,7 @@
 :root {
-    --brow: rgb(124, 61, 40);
-    --gray: rgb(42, 42, 42);
+    --brow: #4f3214;
+    --gray: #2a2a2a;
+    --pink: #e8cbbb;
     --font1: font-family: 'Abril Fatface', cursive;
     --font2: font-family: 'Lobster', cursive;
 }
@@ -10,13 +11,17 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: peachpuff;
+    background-color: var(--pink);
     border-radius: 10px;
 }
 
 * {
     margin: 0;
+    box-sizing: border-box;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
 
 a {
@@ -56,12 +61,12 @@ html {
 .progress {
     width: 40vw;
     background-color: white;
-    border: 1px solid peachpuff;
+    border: 1px solid var(--pink);
     height: 6px;
 }
 
 .progress-bar {
-    background-color: peachpuff;
+    background-color: var(--pink);
     height: 100%;
     animation: loading 1s linear;
 }
@@ -82,4 +87,45 @@ html {
     to {
         opacity: 0;
     }
+}
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------Home Section------------------*/
+
+.home-container{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--brow);
+}
+
+.header {
+    background-color: gray;
+    width: 100%;
+    height: 70px;
+}
+
+.logo-container {
+    background-color: #fff;
+    width: 100px;
+    height: 100%;
+
+}
+
+.menu-container {
+    background-color: var(--brow);
+    width: 300px;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.menu {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    
 }

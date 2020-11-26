@@ -21,7 +21,10 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    color: white;
+}
+
+button {
+    cursor: pointer;
 }
 
 a {
@@ -100,32 +103,81 @@ html {
 .home-container{
     height: 100vh;
     width: 100%;
-    background-color: var(--brow);
+    background-color: var(--pink);
 }
 
 .header {
-    background-color: gray;
     width: 100%;
     height: 70px;
 }
 
 .logo-container {
-    background-color: #fff;
-    width: 100px;
+    width: 50%;
     height: 100%;
-
+    padding-left: 30px;
+    padding-top: 10px;
+    justify-content: flex-start;
 }
 
 .menu-container {
-    background-color: var(--brow);
-    width: 300px;
+    width: 50%;
+    padding-top: 20px;
     height: 100%;
     justify-content: space-around;
 }
 
 .menu {
-    width: 300px;
+    color: var(--brow);
+    padding-left: 5px;
     display: flex;
-    justify-content: space-evenly;
-    
+    align-items: center;
+}
+.menu li {
+    padding-right: 25px;
+}
+
+
+.btn-pedido {
+    background-color: var(--brow);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.hero-container {
+    width: 100%;
+    height: 80%;
+}
+
+.hero-text {
+    width: 50%;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.hero-text h1 {
+    padding-bottom: 25px;
+    font-size: 35px;
+    color: var(--brow);
+}
+.hero-text button {
+    width: 200px;
+}
+.hero-text p {
+    padding-bottom: 20px;
+}
+
+.hero-img {
+    width: 50%;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    height: 100%;
+}
+.hero-img img {
+   height: 85vh;
+   
 }

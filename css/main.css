@@ -54,6 +54,7 @@ html {
     position: fixed;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     top: -10%;
     left: 0;
@@ -63,6 +64,9 @@ html {
     z-index: 999;
 }
 
+#preloader img {
+    margin-bottom: 10px;
+}
 .progress {
     width: 50vw;
     border: 1px solid var(--brow);

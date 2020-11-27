@@ -1,5 +1,5 @@
 $(window).on('load', function () {
-	$('#preloader .progress').delay(1000).fadeOut();
-	$('#preloader').delay(1000).fadeOut('slow'); 
-	$('body').delay(1000).css({'overflow': 'visible'});
+	$('#preloader .progress').delay(800).fadeOut('slow');
+	$('#preloader').delay(800).fadeOut('slow'); 
+	$('body').delay(500).css({'overflow': 'visible'});
   }) 

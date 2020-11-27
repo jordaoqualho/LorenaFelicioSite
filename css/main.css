@@ -2,16 +2,14 @@
     --brow: #4f3214;
     --gray: #2a2a2a;
     --pink: #e8cbbb;
-    --font1: font-family: 'Abril Fatface', cursive;
-    --font2: font-family: 'Lobster', cursive;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--pink);
+    background-color: var(--brow);
     border-radius: 10px;
 }
 
@@ -62,14 +60,13 @@ html {
 }
 
 .progress {
-    width: 40vw;
-    background-color: white;
-    border: 1px solid var(--pink);
-    height: 6px;
+    width: 50vw;
+    border: 1px solid var(--brow);
+    height: 8px;
 }
 
 .progress-bar {
-    background-color: var(--pink);
+    background-color: var(--brow);
     height: 100%;
     animation: loading 1s linear;
 }
@@ -114,7 +111,7 @@ html {
 .logo-container {
     width: 50%;
     height: 100%;
-    padding-left: 30px;
+    padding-left: 70px;
     padding-top: 10px;
     justify-content: flex-start;
 }
@@ -136,7 +133,6 @@ html {
     padding-right: 25px;
 }
 
-
 .btn-pedido {
     background-color: var(--brow);
     border: none;
@@ -152,7 +148,7 @@ html {
 
 .hero-text {
     width: 50%;
-    padding-left: 35px;
+    padding-left: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,6 +156,7 @@ html {
 }
 .hero-text h1 {
     padding-bottom: 25px;
+    font-family: var(--font1);
     font-size: 35px;
     color: var(--brow);
 }
@@ -178,6 +175,5 @@ html {
     height: 100%;
 }
 .hero-img img {
-   height: 85vh;
-   
+   height: 85vh;   
 }

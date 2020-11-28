@@ -3,5 +3,6 @@ Website para Lorena Felicio Confeitaria em maringá.
 
 # TODO LIST
 
-* ( ) DESENVOLVER A HOME PAGE
+* (X) DESENVOLVER A HOME PAGE
+* ( ) FAZER O SLIDESHOW DAR CERTO
 * ( ) DESENVOLVER RESPONSIVIDADE

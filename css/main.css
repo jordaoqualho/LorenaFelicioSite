@@ -29,11 +29,12 @@ button {
   cursor: pointer;
 }
 button:hover {
-  box-shadow: white 0px 2px 10px 2px;
+  box-shadow: var(--brow) 0px 2px 10px 2px;
 }
 
 a {
   text-decoration: none;
+  color: var(--brow);
 }
 
 body,
@@ -123,7 +124,7 @@ html {
   width: 50%;
   height: 100%;
   z-index: 2;
-  padding-left: 70px;
+  padding-left: 85px;
   padding-top: 15px;
   justify-content: flex-start;
 }
@@ -132,17 +133,24 @@ html {
   width: 50%;
   padding-top: 20px;
   height: 100%;
-  justify-content: space-around;
+  justify-content: flex-end;
+  padding-right: 100px;
 }
 
 .menu {
   color: var(--brow);
-  padding-left: 5px;
   display: flex;
   align-items: center;
 }
 .menu li {
   padding-right: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.menu li:hover {
+  font-weight: 900;
+  transition: 0.3s;
 }
 
 .btn-pedido {
@@ -162,23 +170,24 @@ html {
 .hero-text {
   z-index: 2;
   width: 50%;
-  padding-left: 80px;
+  padding-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
 .hero-text h1 {
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   font-family: var(--font2);
-  font-size: 40px;
+  font-size: 45px;
   color: var(--brow);
 }
 .hero-text button {
   width: 200px;
 }
 .hero-text p {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  font-size: 18px;
 }
 
 .hero-img {
@@ -186,8 +195,9 @@ html {
   border-radius: 50px;
   display: flex;
   align-items: self-start;
-  justify-content: center;
+  justify-content: flex-end;
   height: fit-content;
+  padding-right: 100px;
 }
 
 .circle {
@@ -197,15 +207,11 @@ html {
   width: 80vh;
   border-radius: 50%;
   position: absolute;
-  bottom: 7%;
+  right: 90px;
+  bottom: 5%;
 }
 
 .hero-img img {
   height: 80vh;
   z-index: 3;
-  display: none;
-}
-
-#img1.ativo { 
-    display: block;
 }

@@ -62,6 +62,7 @@ html {
 .progress {
   width: 50vw;
   border: 1px solid var(--brow);
+  border-radius: 10px;
   height: 8px;
 }
 
@@ -188,6 +189,7 @@ html {
   border-radius: 50px;
   display: flex;
   align-items: self-start;
+  margin-top: 8vh;
   justify-content: flex-end;
   height: fit-content;
   padding-right: 100px;
@@ -202,7 +204,7 @@ html {
   border-radius: 50%;
   position: absolute;
   right: 140px;
-  bottom: 14%;
+  bottom: 8%;
 }
 
 .hero-img img {

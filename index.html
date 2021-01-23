@@ -1,97 +1,94 @@
 <html lang="pt">
-  <head>
-    <title>Lorena Felicio</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="shortcut icon" href="./src/img/favicon.ico" type="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-  </head>
-  <body>
-    <div id="preloader">
-      <img src="./src/img/LOGO/LOGO_250.png" alt="">
-      <div class="progress">        
-        <div class="progress-bar"></div>
+
+<head>
+  <title>Lorena Felicio</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="shortcut icon" href="./src/img/favicon.ico" type="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+
+<body>
+  <div id="preloader">
+    <img src="./src/img/LOGO/LOGO_250.png" alt="">
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+  <section id="home">
+    <div class="home container">
+      <div class="header flex_row_center">
+        <div class="logo-container flex_row_center">
+          <img src="./src/img/LOGO/oie_transparent.png" alt="">
+        </div>
+        <div class="menu-container flex_row_center">
+          <ul class="menu flex_row_center">
+            <a href="">
+              <li>Home</li>
+            </a>
+            <a href="">
+              <li>Doces</li>
+            </a>
+            <a href="">
+              <li>Bolos</li>
+            </a>
+            <a href="">
+              <li>Salgados</li>
+            </a>
+            <a href="#option">
+              <button class="btn">Fazer Pedido</button>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="hero" id="hero">
+        <div class="hero-container flex_row_center">
+          <div class="hero-text flex_column_center">
+            <h1 class="title">Seja bem-vindo a melhor confeitaria da cidade!</h1>
+            <p> Lorena Felicio Confeitaria trabalha a quase 10 anos
+              com excelência, fornecendo doces, bolos e tortas para todos tipos de festas, anivesários,
+              casamentos ou qualquer tipo de evento que precise ser adoçado!
+            </p>
+            <a href="#option">
+              <button class="btn">Comprar Agora</button>
+            </a>
+          </div>
+          <div class="hero-img">
+            <div class="circle"></div>
+            <img id="img1" class="ativo" src="./src/img/DoisAmores.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
-    <section id="home">
-      <div class="home-container">
-        <div class="header flex-row-center">
-          <div class="logo-container">
-            <img src="./src/img/LOGO/oie_transparent.png" alt="">            
-          </div>
-          <div class="menu-container flex-row-center">
-            <ul class="menu">
-              <a href="">
-                <li>Home</li>
-              </a>
-              <a href="">
-                <li>Doces</li>
-              </a>
-              <a href="">
-                <li>Bolos</li>
-              </a>
-              <a href="">
-                <li>Salgados</li>
-              </a>
-              <a href="#option">
-                <button class="btn">Fazer Pedido</button>
-              </a>              
-            </ul>
-          </div>
-        </div>
-        <div class="hero" id="hero">
-          <div class="hero-container flex-row-center">
-            <div class="hero-text">
-              <h1 class="title">Seja bem-vindo a melhor confeitaria da cidade!</h1>
-              <p> Lorena Felicio Confeitaria trabalha a quase 10 anos 
-                com excelência, fornecendo doces, bolos e tortas para todos tipos de festas, anivesários, 
-                casamentos ou qualquer tipo de evento que precise ser adoçado!
-              </p>
-              <a href="#option">
-                <button class="btn">Comprar Agora</button>
-              </a>              
-            </div>
-            <div class="hero-img">
-              <div class="circle"></div>
-              <img id="img1" class="ativo" src="./src/img/DoisAmores.png" alt="">
-            </div>
-          </div>
-        </div>
+  </section>
+  <img class="wave"src="./src/wave.jpg" alt="">
+  <section class="option flex_row_center" id="option">
+    <div class="option-title">
+      <h1 class="title">O que você procura ?</h1>
+    </div>
+    <div class="option-grid flex-row-center">
+      <div class="option-box">
+        <h1 class="title">Doces</h1>
+        <p>Os melhores de maringá</p>
+        <img src="./src/img/brigadeiro.png" alt="">
       </div>
-    </section>
-    <img src="./src/wave.jpg" alt="">
-    <section class="option flex-row-center" id="option" >
-      <div class="option-title">
-        <h1 class="title">O que você procura ?</h1>
+      <div class="option-box">
+        <h1 class="title">Bolos</h1>
+        <p>Os melhores de maringá</p>
+        <img src="./src/img/kinder.png" alt="">
       </div>
-      <div class="option-grid flex-row-center">
-        <div class="option-box">
-          <h1 class="title">Doces</h1>
-          <p>Os melhores de maringá</p>
-          <img src="./src/img/brigadeiro.png" alt="">
-        </div> 
-        <div class="option-box">
-          <h1 class="title">Bolos</h1>
-          <p>Os melhores de maringá</p>
-          <img src="./src/img/kinder.png" alt="">
-        </div> 
-        <div class="option-box">
-          <h1 class="title">Tortas</h1>
-          <p>Os melhores de maringá</p>
-          <img src="./src/img/focaccia.png" alt="">
-        </div>        
+      <div class="option-box">
+        <h1 class="title">Tortas</h1>
+        <p>Os melhores de maringá</p>
+        <img src="./src/img/focaccia.png" alt="">
       </div>
-    </section>
-    <script src="./js/main.js"></script>
-  </body>
+    </div>
+  </section>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

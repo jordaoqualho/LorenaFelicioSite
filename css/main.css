@@ -37,11 +37,6 @@ a {
   color: var(--brow);
 }
 
-body,
-html {
-  overflow-x: hidden;
-}
-
 #preloader {
   position: fixed;
   display: flex;
@@ -92,11 +87,23 @@ html {
 
 /*------------------Multiuse classes------------------*/
 
-.flex-row-center {
+.flex_row_center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.flex_column_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  width: 1120px;
+  margin: 0 auto;
+}
+
 .title {
   font-family: var(--font2);
   font-size: 50px;
@@ -108,46 +115,41 @@ html {
   border: none;
   height: 50px;
   font-size: 18px;
-  padding: 12px 35px 12px 35px;
+  padding: 10px 35px;
   border-radius: 25px;
   color: white;
 }
 
 /*------------------Home Section------------------*/
-
-.home-container {
-  height: 100vh;
-  width: 100%;
+#home {
+  width: 100vw;
   background-color: var(--pink);
+}
+
+.home {
+  height: 100vh;
 }
 
 .header {
   width: 100%;
+  justify-content: space-between;
   height: 70px;
 }
 
 .logo-container {
-  width: 50%;
   height: 100%;
-  z-index: 2;
-  padding-left: 85px;
-  padding-top: 15px;
-  justify-content: flex-start;
 }
 
 .menu-container {
-  width: 50%;
-  padding-top: 20px;
   height: 100%;
-  justify-content: flex-end;
-  padding-right: 100px;
 }
 
 .menu {
   color: var(--brow);
-  display: flex;
-  align-items: center;
+
+
 }
+
 .menu li {
   padding-right: 25px;
   font-weight: 500;
@@ -161,38 +163,31 @@ html {
 
 .hero-container {
   width: 100%;
-  height: 80%;
+  height: calc(100vh - 70px);
+  position: relative;
+  justify-content: space-between;
 }
 
 .hero-text {
-  z-index: 2;
   width: 50%;
-  padding-left: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100%;
 }
 .hero-text h1 {
+  font-size: 40px;
   padding-bottom: 15px;
 }
-.hero-text button {
-  width: 250px;
-}
+
 .hero-text p {
   padding-bottom: 30px;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .hero-img {
-  width: 50%;
   border-radius: 50px;
   display: flex;
   align-items: self-start;
-  margin-top: 8vh;
   justify-content: flex-end;
-  height: fit-content;
-  padding-right: 100px;
+  height: 100%;
 }
 
 .circle {
@@ -203,8 +198,8 @@ html {
   width: 65vh;
   border-radius: 50%;
   position: absolute;
-  right: 140px;
-  bottom: 8%;
+  bottom: 12%;
+  right: 3%;
 }
 
 .hero-img img {
@@ -213,11 +208,10 @@ html {
   transform: rotate(2deg);
 }
 
-/*------------------Home Section------------------*/
+/*------------------Option Section------------------*/
 
 .option {
-  height: 100vh;
-  flex-direction: column;
+  height: 500px;
   width: 100%;
 }
 

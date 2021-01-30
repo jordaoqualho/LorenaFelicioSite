@@ -23,6 +23,7 @@
   list-style: none;
   font-family: var(--font);
   outline: none;
+  overflow-x: hidden;
 }
 
 button {
@@ -208,44 +209,38 @@ a {
   transform: rotate(2deg);
 }
 
+.wave {
+  width: 100vw;
+}
 /*------------------Option Section------------------*/
 
 .option {
-  height: 500px;
   width: 100%;
+  flex-direction: column;
 }
 
 .option-title {
   margin: 35px;
   margin-top: 0px;
+  text-align: center;
 }
 
 .option-grid {
-  align-content: center;
-  text-align: center;
-  margin-bottom: 50px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin-bottom: 200px;
 }
 
 .option-box {
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: var(--brow) 5px 5px 20px -10px;
-  cursor: pointer;
-}
-
-.option-box h1 {
-  margin-top: 20px;
-  font-size: 35px;
-}
-
-.option-box p {
-  font-family: var(--font);
-  margin: 5px;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
-
-.option-box img {
+  border-radius: 20px;
   height: 450px;
+  margin: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  
 }
+
+
+
 

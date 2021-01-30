@@ -234,11 +234,18 @@ a {
 
 .option-box {
   border-radius: 20px;
-  height: 450px;
+  height: 550px;
   margin: 10px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  
+  text-align: center; 
+}
+
+.option-box h1 {
+  margin-top: 20px;
+}
+
+.option-box img {
+  margin: 50px 0 0 0;
 }
 
 

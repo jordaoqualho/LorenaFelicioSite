@@ -174,7 +174,7 @@ a {
   height: 100%;
 }
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 45´x;
   padding-bottom: 15px;
 }
 
@@ -183,28 +183,34 @@ a {
   font-size: 18px;
 }
 
+.hero-text a {
+  width: fit-content;
+}
+
 .hero-img {
   border-radius: 50px;
   display: flex;
   align-items: self-start;
+  position: relative;
   justify-content: flex-end;
   height: 100%;
 }
 
 .circle {
   background-color: transparent;
-  box-shadow: 0px 25px 50px 1px;
-  z-index: 2;
-  height: 31vh;
-  width: 65vh;
+  box-shadow: 0px 15px 20px 1px;
+  z-index: 1;
+  height: 30vh;
+  width: 60vh;
   border-radius: 50%;
   position: absolute;
-  bottom: 12%;
-  right: 3%;
+  bottom: 8%;
+  right: 8%;
 }
 
 .hero-img img {
-  height: 80vh;
+  height: 75vh;
+  margin-top: 50px;
   z-index: 3;
   transform: rotate(2deg);
 }
@@ -220,8 +226,7 @@ a {
 }
 
 .option-title {
-  margin: 35px;
-  margin-top: 0px;
+  margin: 50px;
   text-align: center;
 }
 

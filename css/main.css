@@ -125,6 +125,28 @@ a {
 }
 
 /*------------------Home Section------------------*/
+.whats_button  {
+  position: fixed;
+  cursor: pointer;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25D366;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all .3s ease-in-out;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+}
+
+.whats_button:hover {
+  transform: scale(1.135);
+}
+
+.whats_button i {
+  color: white;
+  font-size: 25px;
+}
+
 #home {
   width: 100%;
   background-color: var(--pink);
@@ -138,10 +160,15 @@ a {
   width: 100%;
   justify-content: space-between;
   height: 70px;
+  padding-top: 10px;
 }
 
 .logo-container {
   height: 100%;
+}
+
+.logo-container img {
+  margin-left: -13px;
 }
 
 .menu-container {

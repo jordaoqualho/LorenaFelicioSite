@@ -1,7 +1,7 @@
 <html lang="pt">
 
 <head>
-  <title>Lorena Felicio</title>
+  <title>Lorena Felicio | Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/main.css" />
@@ -16,26 +16,25 @@
 
 <body>
   <div id="preloader">
-    <img src="./src/img/LOGO/LOGO_250.png" alt="">
     <div class="progress">
       <div class="progress-bar"></div>
     </div>
   </div>
-  <a href="https://bit.ly/LorenaFelicioWhats" class="whats_button flex_row_center">
+  <a href="https://bit.ly/LorenaFelicioWhats" target="_blank" class="whats_button flex_row_center">
     <i class="fab fa-whatsapp"></i>
-  </a >
+  </a>
   <section id="home">
     <div class="home container">
       <div class="header flex_row_center">
-        <div class="logo-container flex_row_center">
+        <a href="index.html" class="logo-container flex_row_center">
           <img src="./src/img/LOGO/oie_transparent.png">
-        </div>
+        </a>
         <div class="menu-container flex_row_center">
           <ul class="menu flex_row_center">
             <a href="">
               <li>Home</li>
             </a>
-            <a href="">
+            <a href="./pages/doces.html">
               <li>Doces</li>
             </a>
             <a href="">
@@ -77,23 +76,43 @@
         <h1 class="title">O que você procura ?</h1>
       </div>
       <div class="option-grid flex_row_center">
-        <div class="option-box">
+        <a href="./pages/doces.html" class="option-box">
           <h1 class="title">Doces</h1>
           <img src="./src/img/brigadeiro.png" alt="">
-        </div>
-        <div class="option-box">
+        </a>
+        <a class="option-box">
           <h1 class="title">Bolos</h1>
           <img src="./src/img/kinder.png" alt="">
-        </div>
-        <div class="option-box">
+        </a>
+        <a class="option-box">
           <h1 class="title">Salgados</h1>
           <img src="./src/img/focaccia.png" alt="">
-        </div>
+        </a>
       </div>
     </div>
-
   </section>
-  <script src="./js/main.js"></script>
+  <section class="doces">
+    <div class="container flex_column_center">
+      <div class="option-title">
+        <h1 class="title">Doces</h1>
+      </div>
+      <div class="option-grid flex_row_center">
+        <a href="./pages/doces.html" class="option-box">
+          <h1 class="title">Doces</h1>
+          <img src="./src/img/brigadeiro.png" alt="">
+        </a>
+        <a href="./pages/doces.html" class="option-box">
+          <h1 class="title">Doces</h1>
+          <img src="./src/img/brigadeiro.png" alt="">
+        </a>
+        <a href="./pages/doces.html" class="option-box">
+          <h1 class="title">Doces</h1>
+          <img src="./src/img/brigadeiro.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
 </body>
+<script src="./js/main.js"></script>
 
 </html>

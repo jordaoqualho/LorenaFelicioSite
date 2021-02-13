@@ -1,6 +1,8 @@
 # LorenaFelicioSite
 Website para Lorena Felicio Confeitaria em maringá.
 
+https://www.docedecoco.com.br/
+
 # TODO LIST
 
 * (X) DESENVOLVER A HOME PAGE

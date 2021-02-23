@@ -5,7 +5,7 @@
   --font: "Montserrat", sans-serif;
   --font2: "Fredoka One", cursive;
 }
-
+/*
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -14,7 +14,10 @@
   background-color: var(--brow);
   border-radius: 10px;
 }
+*/
 
+
+/* ----------- Estilos Globais ----------- */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -24,272 +27,130 @@
   font-family: var(--font);
   outline: none;
 }
-
-button {
-  cursor: pointer;
-}
-
-button:hover {
-  box-shadow: var(--brow) 0px 2px 10px 2px;
-}
-
-a {
-  text-decoration: none;
-  color: var(--brow);
-}
-
-#preloader {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  top: -10%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--pink);
-  z-index: 999;
-}
-
-#preloader img {
-  margin-bottom: 50px;
-}
-
-.progress {
-  width: 50vw;
-  border: 1px solid var(--brow);
-  border-radius: 10px;
-  height: 8px;
-}
-
-.progress-bar {
-  background-color: var(--brow);
-  height: 100%;
-  animation: loading 1s linear;
-}
-
-@keyframes loading {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-/*------------------Multiuse classes------------------*/
-
-.flex_row_center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex_column_center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .container {
-  max-width: 1120px;
+  width: 1200px;
   margin: 0 auto;
 }
-
-.title {
-  font-family: var(--font2);
-  font-size: 50px;
-  color: var(--brow);
-}
-
-.btn {
-  background-color: var(--brow);
-  border: none;
-  height: 50px;
-  font-size: 18px;
-  padding: 10px 35px;
-  border-radius: 25px;
-  color: white;
-}
-
-/*------------------Home Section------------------*/
-.whats_button  {
-  position: fixed;
-  cursor: pointer;
-  bottom: 30px;
-  right: 30px;
-  background-color: #25D366;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  transition: all .3s ease-in-out;
-  width: 45px;
-  height: 45px;
-  border-radius: 30px;
-}
-
-.whats_button:hover {
-  transform: scale(1.135);
-}
-
-.whats_button i {
-  color: white;
-  font-size: 25px;
-}
-
-#home {
-  width: 100%;
-  background-color: var(--pink);
-}
-
-.home {
-  height: 100vh;
-}
-
-.header {
-  width: 100%;
-  justify-content: space-between;
-  height: 70px;
-  padding-top: 10px;
-}
-
-.logo-container {
-  height: 100%;
-}
-
-.logo-container img {
-  margin-left: -13px;
-}
-
-.menu-container {
-  height: 100%;
-}
-
-.menu {
-  color: var(--brow);
-
-
-}
-
-.menu li {
-  padding-right: 25px;
-  font-weight: 500;
-  font-size: 21px;
-  transition: 0.3s;
-}
-
-.menu li:hover {
-  font-weight: 900;
-  transition: 0.3s;
-}
-
-.hero-container {
-  width: 100%;
-  height: calc(100vh - 70px);
-  position: relative;
-  justify-content: space-between;
-}
-
-.hero-text {
-  width: 50%;
-  height: 100%;
-}
-
-.hero-text h1 {
-  font-size: 45px;
-  padding-bottom: 15px;
-}
-
-.hero-text p {
-  padding-bottom: 30px;
-  font-size: 18px;
-}
-
-.hero-text a {
-  width: fit-content;
-}
-
-.hero-img {
-  border-radius: 50px;
+.flex_center_row {
   display: flex;
-  align-items: self-start;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 1005%;
+    padding: 0 15px;
+  }
+} 
+
+
+/* ----------- Section Home ----------- */
+.home {
+  width: 100%;
+  height: 100vh;
   position: relative;
-  justify-content: flex-end;
+}
+.back {
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  height: 90vh;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  height: 100px;
+  justify-content: space-between !important;
+}
+.logo {
+  margin: 0 80px;
+}
+.menu_list {
+  padding-right: 100px;
+}
+.menu_list ul{
+  color: black;
+  font-size: 24px;
+
+}
+.menu_list li {
+  padding: 0 30px;
+}
+
+/* Slide */
+.slide {
+  width: 100%;
+  height: calc(100% - 100px);
+}
+.banner {
+  justify-content: flex-start; 
   height: 100%;
 }
-
-.circle {
-  background-color: transparent;
-  box-shadow: 0px 15px 40px 1px;
-  z-index: 1;
-  height: 30%;
-  width: 85%;
-  border-radius: 50%;
-  position: absolute;
-  top: 56%;
-  right: 8%;
-}
-
-.hero-img img {
-  height: 75vh;
-  margin-top: 5vh;
-  z-index: 3;
-  transform: rotate(2deg);
-}
-
-.wave {
-  width: 100%;
-}
-
-/*------------------Option Section------------------*/
-
-.option {
-  width: 100%;
+.dots {
   flex-direction: column;
+  margin: 0 100px;
 }
-
-.option-title {
-  margin: 50px;
-  text-align: center;
+.dots div {
+  width: 10px;
+  height: 10px;
+  margin: 70px 0;
+  background-color: lightgray;
+  border-radius: 50%;
 }
-
-.option-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  margin-bottom: 200px;
+.dots div.ativo {
+  background-color:var(--brow);
+  height: 15px;
+  width: 15px;
 }
-
-.option-box {
+.text {
+  display: flex;
+  width: 30%;
+  margin-right: 17%;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.text h1 {
+  font-size: 100px;
+  margin-bottom: 50px;
+  color: var(--brow);
+  font-family: var(--font2);
+}
+.text p {
+  font-size: 24px;
+  color:gray;
+}
+.text button {
+  color: var(--brow);
   cursor: pointer;
-  border-radius: 20px;
-  height: 550px;
-  margin: 10px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-  transition: all .3s ease-in-out;
-  text-align: center;
-  transform: translateZ(0);
-  backface-visibility: hidden;
+  padding: 15px 50px;
+  margin-top: 50px;
+  font-size: 25px;
+  font-family: var(--font2);
+  border: 5px solid var(--brow);
+  border-radius: 10px;
+  position: relative;
+  background-color: transparent;
+  transition: .5s ease;
 }
-
-.option-box:hover {
-  transform: scale(1.04);  
+.text button::after {
+  content: '';
+  position: absolute;
+  transition: .5s ease;  transition: .5s ease;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background-color: var(--brow);
 }
-
-.option-box h1 {
-  margin-top: 20px;
+.text button:hover::after {
+  width: 100%;
 }
-
-.option-box img {
-  margin: 50px 0 0 0;
+.text button:hover {
+  color: white;
+}
+.banner img {
+  height: 75%;
 }

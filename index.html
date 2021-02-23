@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt">
 
 <head>
@@ -9,110 +10,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://kit.fontawesome.com/68009b18a3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div id="preloader">
-    <div class="progress">
-      <div class="progress-bar"></div>
-    </div>
-  </div>
-  <a href="https://bit.ly/LorenaFelicioWhats" target="_blank" class="whats_button flex_row_center">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <section id="home">
-    <div class="home container">
-      <div class="header flex_row_center">
-        <a href="index.html" class="logo-container flex_row_center">
-          <img src="./src/img/LOGO/oie_transparent.png">
-        </a>
-        <div class="menu-container flex_row_center">
-          <ul class="menu flex_row_center">
-            <a href="">
-              <li>Home</li>
-            </a>
-            <a href="./pages/doces.html">
-              <li>Doces</li>
-            </a>
-            <a href="">
-              <li>Bolos</li>
-            </a>
-            <a href="">
-              <li>Salgados</li>
-            </a>
-            <a href="#option">
-              <button class="btn">Fazer Pedido</button>
-            </a>
-          </ul>
+  <section class="home">
+    <img class="back" src="./src/img/Vector 1.svg" alt="">
+    <header class="flex_center_row">
+      <div class="logo">
+        <img src="./src/img/logos/logo_header.png" alt="">
+      </div>
+      <div class="menu_list"> 
+        <ul class="flex_center_row">
+          <li>Home</li>
+          <li>Doces</li>
+          <li>Bolos</li>
+          <li>Salgados</li>
+        </ul>
+      </div>
+    </header>
+    <div class="slide">
+      <div class="banner flex_center_row">
+        <nav class="dots">
+          <div class="ativo"></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+        </nav>
+        <div class="text">
+          <h1>Bolos  <br> Divinos</h1>
+          <p>Há mais de 8 anos no mercado, sempre usando os melhores igredientes, tudo feito artesanalmente com muito amor!</p>
+          <a href="">
+            <button>
+              Provar
+            </button>
+          </a>
         </div>
+        <img src="./src/img/DoisAmores.png" alt="">
       </div>
-      <div class="hero" id="hero">
-        <div class="hero-container flex_row_center">
-          <div class="hero-text flex_column_center">
-            <h1 class="title">Seja bem-vindo a melhor confeitaria da cidade!</h1>
-            <p> Lorena Felicio Confeitaria trabalha a quase 10 anos
-              com excelência, fornecendo doces, bolos e tortas para todos tipos de festas, anivesários,
-              casamentos ou qualquer tipo de evento que precise ser adoçado!
-            </p>
-            <a href="">
-              <button class="btn">Comprar Agora</button>
-            </a>
-          </div>
-          <div class="hero-img">
-            <div class="circle"></div>
-            <img id="img1" class="ativo" src="./src/img/DoisAmores.png" alt="">
-          </div>
-        </div>
       </div>
     </div>
   </section>
-  <img class="wave" src="./src/wave.jpg" alt="">
-  <section class="option" id="option">
-    <div class="container flex_column_center">
-      <div class="option-title">
-        <h1 class="title">O que você procura ?</h1>
-      </div>
-      <div class="option-grid flex_row_center">
-        <a href="./pages/doces.html" class="option-box">
-          <h1 class="title">Doces</h1>
-          <img src="./src/img/brigadeiro.png" alt="">
-        </a>
-        <a class="option-box">
-          <h1 class="title">Bolos</h1>
-          <img src="./src/img/kinder.png" alt="">
-        </a>
-        <a class="option-box">
-          <h1 class="title">Salgados</h1>
-          <img src="./src/img/focaccia.png" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="doces">
-    <div class="container flex_column_center">
-      <div class="option-title">
-        <h1 class="title">Doces</h1>
-      </div>
-      <div class="option-grid flex_row_center">
-        <a href="./pages/doces.html" class="option-box">
-          <h1 class="title">Doces</h1>
-          <img src="./src/img/brigadeiro.png" alt="">
-        </a>
-        <a href="./pages/doces.html" class="option-box">
-          <h1 class="title">Doces</h1>
-          <img src="./src/img/brigadeiro.png" alt="">
-        </a>
-        <a href="./pages/doces.html" class="option-box">
-          <h1 class="title">Doces</h1>
-          <img src="./src/img/brigadeiro.png" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
+  
+  <script src="./js/main.js"></script>
 </body>
-<script src="./js/main.js"></script>
 
 </html>
+

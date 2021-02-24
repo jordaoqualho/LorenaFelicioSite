@@ -59,7 +59,7 @@
 
 /* Header */
 header {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   justify-content: space-between !important;
 }
@@ -189,4 +189,11 @@ padding: 0 0px;
 }
 .social-media i:hover {
   color: white;
+}
+
+/* ----------- Section Produtos ----------- */
+.produtos {
+  background-color: white;
+  height: 700px;
+  width: 100%;
 }

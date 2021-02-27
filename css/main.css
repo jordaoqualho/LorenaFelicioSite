@@ -194,6 +194,31 @@ padding: 0 0px;
 /* ----------- Section Produtos ----------- */
 .produtos {
   background-color: white;
-  height: 700px;
+  max-width: 1200px;
+  margin: 50px auto;
   width: 100%;
+}
+.produtos .title {
+  font-size: 48px;
+  text-align: center;
+  color: var(--brow);
+}
+.produtos .title h1 {
+  font-family: var(--font2);
+}
+.produtos .title p {
+  font-family: var(--font);
+  margin-top: 20px;
+  font-size: 18px;
+}
+.produtos-grid {
+  display: grid;
+  margin: 50px 0;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.prod {
+  border-radius: 40px;
+  background-color: peachpuff;
+  height: 350px;
 }

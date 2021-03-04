@@ -1,9 +1,3 @@
-$(window).on("load", function () {
-  $("#preloader .progress").delay(800).fadeOut("slow");
-  $("#preloader").delay(800).fadeOut("slow");
-  $("body").delay(500).css({ overflow: "visible" });
-});
-
 //função que ajusta o escroll da tag "a"
 let anchorlinks = document.querySelectorAll('a[href^="#"]')
  
